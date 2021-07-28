@@ -7,3 +7,11 @@ export const fetchArtworks = async () => {
 
   return json.data;
 };
+
+
+export const fetchByArtwork = async (id) => {
+  const res = await fetch(`https://api.artic.edu/api/v1/artworks/${id}`);
+  const json = await res.json();
+  console.log(res);
+  return json.data;
+};

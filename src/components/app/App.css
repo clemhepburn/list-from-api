@@ -19,6 +19,13 @@ h1 {
   
 }
 
+a {
+  color: royalblue;
+  text-decoration: none;
+}
+
+
+
 p {
   font-family: 'Inter', sans-serif;
 }
@@ -45,3 +52,9 @@ li {
   overflow: scroll;
 }
 
+li:hover a, li:hover {
+  background-color: royalblue;
+  color: #cdcdcd;
+  border: 1px solid royalblue;
+  cursor: pointer;
+}

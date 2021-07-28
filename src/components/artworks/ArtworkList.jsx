@@ -19,8 +19,8 @@ ArtworkList.propTypes = {
     PropTypes.shape({
       id: PropTypes.number.isRequired,
       title: PropTypes.string.isRequired,
-      artist_title: PropTypes.string.isRequired,
-      date_display: PropTypes.string.isRequired,
+      artist_title: PropTypes.string,
+      date_display: PropTypes.string,
     })
   ).isRequired,
 };
