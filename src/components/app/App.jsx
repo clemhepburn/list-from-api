@@ -14,6 +14,7 @@ class App extends Component {
   render() {
     return (
       <div className="App">
+        <h1>List of Artworks</h1>
         <Router>
           <main>
 
