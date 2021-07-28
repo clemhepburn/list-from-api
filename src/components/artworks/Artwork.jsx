@@ -1,11 +1,10 @@
 import React from 'react';
 import PropTypes from 'prop-types';
-import e from 'express';
 
 const Artwork = ({ title, artist, date, image }) => (
-  <div className="artwork">
+  <div>
     <img src={image} alt={title} />
-    <div className="artwork-info">
+    <div>
       <h2>{title}</h2>
       <p>{artist}</p>
       <p>{date}</p>

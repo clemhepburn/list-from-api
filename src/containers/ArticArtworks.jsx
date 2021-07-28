@@ -9,7 +9,8 @@ export default class ArticArtworks extends Component {
   };
 
   async componentDidMount() {
-    const { artworks } = await fetchArtworks();
+    const artworks = await fetchArtworks();
+    console.log(artworks);
     this.setState({
       artworks,
       loading: false,
