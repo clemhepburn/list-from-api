@@ -1,22 +1,20 @@
 import React from 'react';
 import PropTypes from 'prop-types';
 
-const Artwork = ({ title, artist, date, image }) => (
+const Artwork = ({ title, artist_title, date_display }) => (
   <div>
-    <img src={image} alt={title} />
+    <h2>{title}</h2>
     <div>
-      <h2>{title}</h2>
-      <p>{artist}</p>
-      <p>{date}</p>
+      <p>{artist_title}</p>
+      <p>{date_display}</p>
     </div>
   </div>
 );
 
 Artwork.propTypes = {
   title: PropTypes.string.isRequired,
-  artist: PropTypes.string.isRequired,
-  date: PropTypes.string.isRequired,
-  image: PropTypes.string.isRequired,
+  artist_title: PropTypes.string.isRequired,
+  date_display: PropTypes.string.isRequired,
 };
 
 export default Artwork;

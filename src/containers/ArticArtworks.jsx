@@ -20,7 +20,7 @@ export default class ArticArtworks extends Component {
   render() {
     const { artworks, loading } = this.state;
 
-    if(loading) return <div>Loading...</div>;
+    if(loading) return <div className="loading">Loading...</div>;
 
     return <ArtworkList artworks={artworks} />;
   }
