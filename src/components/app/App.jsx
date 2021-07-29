@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
 import ArticArtworks from '../../containers/ArticArtworks';
-import ArtworkDetail from '../artworks/ArtworkDetail';
+import ArtDetail from '../../containers/ArtDetail';
 import {
   BrowserRouter as Router,
   Route,
@@ -27,7 +27,7 @@ class App extends Component {
 
               <Route path="/:id" exact={true}
                 render={routerProps => (
-                  <ArtworkDetail {...routerProps} />
+                  <ArtDetail {...routerProps} />
                 )}
               />
               <Redirect to="/" />

@@ -13,8 +13,8 @@ export default class ArtDetail extends Component {
       
       const { match } = this.props;
       
-      const character = await fetchByArtwork(match.params.id);
-      this.setState({ character, loading: false });
+      const artwork = await fetchByArtwork(match.params.id);
+      this.setState({ artwork, loading: false });
     }
 
     render() {
