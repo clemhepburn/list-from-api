@@ -1,0 +1,23 @@
+section {
+  font-size: 3rem;
+  display: flex;
+  flex-direction: column;
+  flex-wrap:unset;
+  font-family: 'Inter';
+  height: 90vh;
+  align-items: center;
+  justify-content: center;
+  text-align: left;
+}
+
+section h1, h2, h3, h4 {
+  margin: 0.5rem;
+}
+
+section h4 {
+  color: gray;
+}
+
+section h2, h3 {
+  color: rgb(60, 60, 60);
+}

@@ -1,5 +1,44 @@
-import React from 'react';
+import React, { Component } from 'react';
+import ArticArtworks from '../../containers/ArticArtworks';
+import ArtDetail from '../../containers/ArtDetail';
+import {
+  BrowserRouter as Router,
+  Route,
+  Switch,
+  Redirect
+} from 'react-router-dom';
+import './App.css';
 
-export default function App() {
-  return <h1>Hello World</h1>;
+class App extends Component {
+
+  render() {
+    return (
+      <div className="App">
+        <h1><a href="/">List of Artworks</a></h1>
+        <Router>
+          <main>
+
+            <Switch>
+              <Route path="/" exact={true}
+                render={routerProps => (
+                  <ArticArtworks {...routerProps} />
+                )}
+              />
+
+              <Route path="/:id" exact={true}
+                render={routerProps => (
+                  <ArtDetail {...routerProps} />
+                )}
+              />
+              <Redirect to="/" />
+
+            </Switch>
+          </main>
+        </Router>
+      </div>
+    );
+  }
+
 }
+
+export default App;
